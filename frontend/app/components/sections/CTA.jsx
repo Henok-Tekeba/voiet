@@ -68,7 +68,7 @@ export default function CTA() {
           </span>
 
           {/* Headline */}
-          <h2 className="text-2xl lg:text-3xl font-bold text-text-primary tracking-tight max-w-lg">
+          <h2 className="text-2xl lg:text-3xl font-light text-text-primary tracking-tight max-w-lg">
             Be First When We Launch
           </h2>
 
