@@ -14,6 +14,11 @@ export default function CTA() {
 
   const handleSubmit = async () => {
     if (!email) return
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+
+if (!isValidEmail) {
+  return res.status(400).json({ error: 'Please enter a valid email address.' })
+}
 
     setLoading(true)
     setStatus(null)

@@ -14,6 +14,13 @@ export default function Hero() {
 
   const handleSubmit = async () => {
     if (!email) return
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+
+if (!isValidEmail) {
+  setStatus('error')
+  setMessage('Please enter a valid email address.')
+  return
+}
 
     setLoading(true)
     setStatus(null)
