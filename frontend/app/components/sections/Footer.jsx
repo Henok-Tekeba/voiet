@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-border-subtle">
       <Container>
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between py-8 gap-6 lg:gap-0">
+        <div className="flex items-center justify-between py-8">
 
           {/* Logo */}
           <span className="text-text-primary font-display font-semibold text-base tracking-tight">

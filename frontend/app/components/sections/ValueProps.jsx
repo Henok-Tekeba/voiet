@@ -25,7 +25,7 @@ export default function ValueProps() {
   return (
     <Section>
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-16">
           {props.map((prop) => {
             const Icon = prop.icon
             return (
