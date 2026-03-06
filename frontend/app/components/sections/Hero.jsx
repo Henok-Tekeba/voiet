@@ -15,20 +15,21 @@ export default function Hero() {
           </span>
 
           {/* Headline */}
-          <h1 className="text-4xl font-light text-text-primary tracking-tight leading-tight max-w-2xl">
+          <h1 className="text-2xl lg:text-4xl font-light text-text-primary tracking-tight leading-tight max-w-2xl">
             Your Product,<br />Speaking Ethiopian
           </h1>
 
           {/* Subtext */}
-          <p className="text-text-secondary text-lg font-light leading-relaxed max-w-xl">
+          <p className="text-text-secondary text-base lg:text-lg font-light leading-relaxed max-w-xl">
             Give your virtual assistant a voice your customers actually trust. 
-            voiET delivers natural.
+            voiET delivers natural, human-like Amharic speech built for businesses 
+            shaping the future of Ethiopia.
           </p>
 
           {/* Input + Button */}
-          <div className="flex items-start gap-2 mt-4 w-full max-w-md">
-            <Input placeholder="company@email.com" className="flex-1" />
-            <Button variant="primary" size="md">
+          <div className="flex flex-col lg:flex-row items-stretch lg:items-start gap-2 mt-4 w-full lg:max-w-md">
+            <Input placeholder="company@email.com" className="flex-1 w-full" />
+            <Button variant="primary" size="sm" className="w-full lg:w-auto">
               Join Waitlist
             </Button>
           </div>

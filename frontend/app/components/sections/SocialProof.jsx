@@ -27,7 +27,7 @@ export default function SocialProof() {
           </p>
 
           {/* Company placeholders */}
-          <div className="flex items-center justify-center gap-12">
+          <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-12">
             {companies.map((company) => (
               <span
                 key={company}

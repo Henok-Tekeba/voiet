@@ -22,7 +22,7 @@ export default function CTA() {
           </span>
 
           {/* Headline */}
-          <h2 className="text-3xl font-regular text-text-primary tracking-tight max-w-xl">
+          <h2 className="text-3xl font-light text-text-primary tracking-tight max-w-xl">
             Be First When We Launch
           </h2>
 
@@ -32,7 +32,7 @@ export default function CTA() {
           </p>
 
           {/* Input + Button */}
-          <div className="flex items-start gap-2 mt-4 w-full max-w-md">
+          <div className="flex flex-col lg:flex-row items-stretch lg:items-start gap-2 mt-4 w-full lg:max-w-md">
             <Input placeholder="company@email.com" className="flex-1" />
             <Button variant="primary" size="md">
               Join Waitlist
