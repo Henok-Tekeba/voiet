@@ -5,7 +5,7 @@ import Section from '../layout/Section'
 
 export default function Hero() {
   return (
-    <Section className="py-32">
+    <Section className="py-16 sm:py-32">
       <Container>
         <div className="flex flex-col items-center text-center gap-6">
 
