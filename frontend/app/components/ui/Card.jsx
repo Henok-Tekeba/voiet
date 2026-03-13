@@ -6,10 +6,11 @@ export default function Card({
   const base = `
     bg-bg-subtle
     border border-border-default
-    p-6
+    p-6 sm:p-8
     rounded-none
     transition-all duration-200
     relative
+    min-h-[220px] sm:min-h-[280px]
   `
 
   const variants = {
@@ -30,13 +31,9 @@ export default function Card({
     <div className={`${base} ${variants[variant]} ${className}`}>
       {variant === 'bracket' && (
         <>
-          {/* top-left */}
           <span className="absolute top-0 left-0 w-3 h-3 border-t border-l border-text-muted" />
-          {/* top-right */}
           <span className="absolute top-0 right-0 w-3 h-3 border-t border-r border-text-muted" />
-          {/* bottom-left */}
           <span className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-text-muted" />
-          {/* bottom-right */}
           <span className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-text-muted" />
         </>
       )}
