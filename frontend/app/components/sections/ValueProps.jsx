@@ -25,12 +25,12 @@ export default function ValueProps() {
   return (
     <Section>
       <Container>
-        <div className="grid grid-cols-3 gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-16">
           {props.map((prop) => {
             const Icon = prop.icon
             return (
               <Card key={prop.title} variant="bracket">
-                <div className="flex flex-col gap-20">
+                <div className="flex flex-col gap-8 sm:gap-20">
                   <div className="w-10 h-10 flex items-center justify-center border border-border-default">
                     <Icon size={18} className="text-text-secondary" />
                   </div>
